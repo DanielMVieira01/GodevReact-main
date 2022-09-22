@@ -1,0 +1,129 @@
+.containerBodyFooter {
+  text-align: center;
+  margin: 0;
+  padding: 13px;
+  font-family: "Lato", sans-serif;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
+.containerFooter {
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+p,
+li {
+  font-family: "Lato", sans-serif;
+  padding: 4px;
+  margin: auto;
+  color: white;
+  font-size: 10px;
+  text-align: justify;
+  list-style: none;
+}
+.containerFooter p:hover,
+li:hover {
+  color: rgb(99, 97, 97);
+  cursor: pointer;
+}
+
+.webFooter {
+  padding-top: 10px;
+  font-size: 10px;
+}
+
+.credit {
+  display: block;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-size: 11px;
+  letter-spacing: 1px;
+  clear: both;
+}
+
+.credit a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.credit a::after {
+  content: "";
+  background: rgb(29, 29, 29);
+  mix-blend-mode: exclusion;
+  width: calc(100% + 18px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media (max-width: 1350px) {
+  .containerBodyFooter p {
+    width: 95%;
+    grid-gap: 10px;
+    border: 0;
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .containerBodyFooter p {
+    display: grid;
+    grid-gap: 70px 20px;
+    width: 95%;
+    text-align: left;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .containerBodyFooter p {
+    width: 80%;
+    font-size: 10px;
+    display: grid;
+    padding: 0;
+    margin: 0;
+  }
+  .webFooter {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .containerBodyFooter {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .webFooter {
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 9px;
+  }
+}

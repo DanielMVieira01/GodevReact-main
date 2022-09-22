@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.slider-container {
+  max-width: 100%;
+  height: auto;
+  padding-top: 73px;
+  position: static;
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  position: absolute;
+  object-fit: contain;
+}
+
+.all-dots {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-400%);
+  z-index: 70; 
+}
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0px 7px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: ease 500ms;
+}
+
+.slider-container:hover .dot:hover {
+  background-color: white;
+}
+.slider-container .active-dot {
+  background-color: white; }
+
+@media (max-width:2600px) {
+  .all-dots {
+    top: 240px;
+  }
+}
+@media (max-width:2272px) {
+  .all-dots {
+    top: 180px;
+  }
+}
+@media (max-width:2050px) {
+  .all-dots {
+    top: 130px;
+  }
+}
+@media (max-width:1832px) {
+  .all-dots {
+    top: 90px;
+  }
+}
+@media (max-width:1652px) {
+  .all-dots {
+    top: 30px;
+  }
+}
+@media (max-width:1448px) {
+  .all-dots {
+    top: 0px;
+  }
+}
+@media (max-width:1312px) {
+  .all-dots {
+    top: -30px;
+  }
+}
+@media (max-width:1204px) {
+  .all-dots {
+    top: -70px;
+  }
+}
+@media (max-width:1050px) {
+  .all-dots {
+    top: -120px;
+  }
+}
+@media (max-width:852px) {
+  .all-dots {
+    top: -180px;
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    border: 1px solid gray;
+  }
+}
+@media (max-width:746px) {
+  .all-dots {
+    top: -200px;
+  }
+}
+
+@media (max-width:660px) {
+  .all-dots {
+    top: -230px;
+  }
+}
+@media (max-width:546px) {
+  .all-dots {
+    top: -260px;
+  }
+}
+@media (max-width:454px) {
+  .all-dots {
+    top: -290px;
+  }
+}
+@media (max-width:324px) {
+  .all-dots {
+    top: -310px;
+  }
+}
+
+@media (max-width:1200px) {
+  .slider-container {
+    padding-top: 60px;
+  }
+}
+@media (max-width:900px) {
+  .slider-container {
+    padding-top: 55px;
+  }
+}
+ 
